@@ -1,0 +1,57 @@
+/* // Float 모델
+.slides1 {width: 500%;}
+.slides1 > .slide1 {width: 20%; float: left;} 
+*/
+
+/* // Position 모델
+.slides1 {width: 100%; position: relative;}
+.slides1 > .slide1 {width: 100%; position: absolute; top: 0;}
+.slides1 > :nth-child(2) {left: 100%;}
+.slides1 > :nth-child(3) {left: 200%;}
+.slides1 > :nth-child(4) {left: 300%;}
+.slides1 > :nth-child(5) {left: 400%;}
+.slides1 > :nth-child(6) {left: 500%;}
+*/
+
+/***** 공통사항 *****/
+body {height: 10000px;}
+.slide_wrap {width: 100%; overflow:hidden; position: relative;}
+.container {width: 720px;}
+.container:not(:first-child) {margin-top: 200px;}
+.pager {display: flex; justify-content: center; width: 100%; position: absolute; bottom:20px;}
+.pager > li {text-align: center; flex: 0 0 30px; font-size: 0.75rem; cursor: pointer; color: white;}
+.pager > li:first-child {color: red;}
+
+/***** Flex 모델 *****/
+.slides1 {width: 600%; display: flex; position: relative;}
+.slides1 > .slide {flex: 1 1 100%;}
+
+.slides2 {width: 500%; display: flex; position: relative;}
+.slides2 > .slide {flex: 1 1 100%;}
+
+.slides3 {width: 600%; display: flex; position: relative;}
+.slides3 > .slide {flex: 1 1 100%;}
+
+.slides4 {width: 100%; position: relative;}
+.slides4 > .slide {position: absolute;}
+
+.slides5 {width: 100%; position: relative;}
+.slides5 > .slide {position: absolute;}
+
+.slides6 {width: 100%; position: relative;}
+.slides6 > .slide {position: absolute;}
+.pager_vert {position: absolute; top: 50%; transform: translateY(-50%); right: 10px; z-index: 100; color: beige; font-size: 0.5rem; }
+.pager_vert > li {margin-bottom: 0.5rem; cursor: pointer;}
+.pager_vert > li > i {text-shadow: 0 0 10px rgba(0,0,0,0.3);}
+
+.slides7 {width: 100%; position: relative;}
+.slides7 > .slide {position: absolute; top: 0;}
+.pager_horz {width: 100%; display: flex; justify-content: center; position: absolute; z-index: 999999; bottom: 10px; font-size: 0.5rem; color: beige;}
+.pager_horz > li {margin: 0 0.25rem; cursor: pointer;}
+.pager_horz > li > i {text-shadow: 0 0 10px rgba(0,0,0,0.3);}
+
+/*
+2^8 => 256
+2^16 => 65536
+2^24 => 2147483648
+*/
