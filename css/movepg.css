@@ -1,6 +1,7 @@
 /* 반응형 */
 @media screen and (max-width:650px){
 	html,body{margin:0; padding:0;}
+	.wrap {min-width: 0px;}
 	.logo{width:110px;margin-left:15px}
 	.nav_ctgr,.nav_lang{display:none;}
 	.hambar img{width:50%;height:90%;}
@@ -17,5 +18,7 @@
 	#p1_img_pc{display:none;}
 	.p1_cmt h4{font-size:20px;}
 	.p1_cmt p{font-size:12px;width:250px;}
-.pro_menus{border:1px solid red;}
+	.p1-1 .p1_img, .p1-2 .p1_img {
+		margin-right: 0;
+	}
 }

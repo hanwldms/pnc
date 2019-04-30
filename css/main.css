@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 html,body{font-family: 'Noto Sans KR', sans-serif;}
 
-.wrap{width:100%;max-width: 1200px;margin:0px auto;}
+.wrap{width:100%; min-width: 1100px; max-width: 1200px; margin:0px auto;}
 .title{font-weight:bold;text-align: center;padding:80px 0;font-size:3rem;color:#333333}
 
 
@@ -42,7 +42,7 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 .bar_pointer:hover{background-position: 0 -13px;}
 /* main */
 /* slide img */
-.slide_wrap{width:100%;overflow:hidden;position: relative;}
+.slide_wrap{width:100%; min-width: 1980px; overflow:hidden; position: relative;}
 .pager {width: 100%; position: absolute;top:67%;left:19.5%;z-index: 9999;}
 .pager > li {font-size: 1rem; cursor: pointer; color: #bbb;float: left;margin-right: 5px;}
 .pager > li:first-child {color: #0068d6;}
@@ -81,11 +81,11 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 /* p2 제품소개 */
 .p2 {}
 .p2 > div {background-image: url(../img/bg_product.png);background-size: cover;background-repeat: no-repeat; padding:80px 0;}
-.p2_wrap{width:100%; max-width:930px;;margin:0 auto;overflow: hidden;}
+.p2_wrap{width:100%; max-width:930px; margin:0 auto; overflow: hidden; border: 1px solid #f00;}
 .arrow{float: right;margin-bottom:20px;cursor: pointer;}
 #arrow_l{margin-right: 10px;}
 .pro_menus{display:flex; width: 200%; position: relative; left: 0;}
-.product{width:224px;height:460px;margin-right: 10px;position: relative;overflow: hidden;}
+.product{width:224px; flex-shrink: 0; height:460px; margin-right: 10px; position: relative; overflow: hidden;}
 
 .thumbs{position: relative;width:100%; height:173px; overflow: hidden;z-index:9999;}
 .thumbs img{width:100%;margin-top: -20px;}
