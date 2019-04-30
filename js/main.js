@@ -84,3 +84,16 @@ $(".p1-3").mouseleave(function () {
 	$(".go3").stop().slideUp("fast");
 });
 
+$(".qnabts > button:first-child").click(function(){
+	$(".select_qnabt1").show();
+	$(".select_qnabt2").hide();
+	$(".FAQimg").children("img").attr('src', '../img/inquiry02_bg.png');
+	$(".FAQcmt").children("h4").html('제품/견적문의 FAQ');
+});
+
+$(".qnabts > button:last-child").click(function(){
+	$(".select_qnabt2").show();
+	$(".select_qnabt1").hide();
+	$(".FAQimg").children("img").attr('src', '../img/inquiry01_bg.png');
+	$(".FAQcmt").children("h4").html('채용문의 FAQ');
+});
