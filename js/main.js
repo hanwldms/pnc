@@ -97,3 +97,36 @@ $(".qnabts > button:last-child").click(function(){
 	$(".FAQimg").children("img").attr('src', '../img/inquiry01_bg.png');
 	$(".FAQcmt").children("h4").html('채용문의 FAQ');
 });
+
+var interval = setInterval(prdAni, 2000);
+var k = -1;
+var pos = 0;
+var gap = 0;
+var prdWid = 234;
+function prdAni() {
+	gap = prdWid*k;
+	pos = Number($(".pro_menus").css("left").replace("px", ""));
+	var tar = pos + gap;
+	$(".pro_menus").stop().animate({"left": tar+"px"}, 500, function(){
+		pos = Number($(this).css("left").replace("px", ""));
+		if(pos <= -prdWid * 3) {
+			clearInterval(interval);
+		}
+	});
+}
+
+$("#arrow_l").click(function(){
+	clearInterval(interval);
+	if(pos < 0) {
+		k = 1;
+		prdAni();
+	}
+});
+$("#arrow_r").click(function(){
+	clearInterval(interval);
+	if(pos > -prdWid * 3) {
+		k = -1;
+		prdAni();
+	}
+});
+
