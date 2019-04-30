@@ -1,0 +1,21 @@
+/* 반응형 */
+@media screen and (max-width:650px){
+	html,body{margin:0; padding:0;}
+	.logo{width:110px;margin-left:15px}
+	.nav_ctgr,.nav_lang{display:none;}
+	.hambar img{width:50%;height:90%;}
+	.nav_rt{margin-top:5px;}
+	.navs{padding:10px 0;}
+	.bar_hover{top:50px;}
+	#move_pointer{display:none;}
+	.slide_wrap{display:none;}
+	.m_slide_wrap{display:block;}
+	.p1>.title{font-size:1.5rem;padding-top:100px;padding-bottom:20px;}
+	.p2>.title ,.p3>.title{font-size:1.5rem;padding-top:20px;padding-bottom:20px;}
+	#p1_img_m{display:block;border:1px solid blue;padding:0 10px 20px 10px;}
+	.p1>div{display:flex;flex-direction: column;}
+	#p1_img_pc{display:none;}
+	.p1_cmt h4{font-size:20px;}
+	.p1_cmt p{font-size:12px;width:250px;}
+.pro_menus{border:1px solid red;}
+}
