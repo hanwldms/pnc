@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
-html,body{font-family: 'Noto Sans KR', sans-serif;}
+html,body{font-family: 'Noto Sans KR', sans-serif; }
 
 .wrap{width:100%; min-width: 1100px; max-width: 1200px; margin:0px auto;}
 .title{font-weight:bold;text-align: center;padding:80px 0;font-size:3rem;color:#333333}
@@ -67,6 +67,7 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* p1 회사소개 */
 #p1_img_m{display:none;}
+
 .p1 > div {display: flex;justify-content: center;}
 .p1-1 .p1_img,.p1-2 .p1_img {margin-right: 30px;}
 .p1-1, .p1-2, .p1-3{position: relative;cursor: pointer;}
@@ -79,13 +80,13 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 
 
 /* p2 제품소개 */
-.p2 {}
+.p2 {width:100%;}
 .p2 > div {background-image: url(../img/bg_product.png);background-size: cover;background-repeat: no-repeat; padding:80px 0;}
-.p2_wrap{width:100%; max-width:930px; margin:0 auto; overflow: hidden; border: 1px solid #f00;}
-.arrow{float: right;margin-bottom:20px;cursor: pointer;}
+.p2_wrap{width:100%; max-width:930px; margin:0 auto; overflow: hidden;}
+.arrow{margin-bottom:20px;cursor: pointer;width:100%;padding-left:88.5%}
 #arrow_l{margin-right: 10px;}
-.pro_menus{display:flex; width: 200%; position: relative; left: 0;}
-.product{width:224px; flex-shrink: 0; height:460px; margin-right: 10px; position: relative; overflow: hidden;}
+.pro_menus{width: 200%; position: relative; left: 0;}
+.product{width:12%;height:460px; margin-right: 10px; position: relative; overflow: hidden;float:left;}
 
 .thumbs{position: relative;width:100%; height:173px; overflow: hidden;z-index:9999;}
 .thumbs img{width:100%;margin-top: -20px;}
@@ -103,6 +104,7 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 .p3wrap{width:100%;max-width:1160px;margin:0 auto;height:500px;position: relative;}
 .qnabts{border:1px solid #999;display:flex;width:436px;margin:0 auto;font-size: 15px;margin-bottom:43px;}
 .qnabt1{background-color: #212f45;color:white;width:218px;height:46px;}
+.buttoncolor{background-color: #212f45;color:white;}
 .qnabt1 span, .qnabt2 span{text-align: center;}
 .qnabt1 img, .qnabt2 img{float: right;padding-top:3px;}
 .qnabt2{background-color:white;width:218px;height:46px;}
@@ -133,7 +135,6 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 
 input,select{border:1px solid #cdcdcd;}
 
-
 .select_qnabt2{display:none;}
 .select_bt{margin-top:35px;display:flex;justify-content: center;}
 .selectbt{color:white;height:37px;background-color: #005ec2;width:122px;font-size:14px;}
@@ -143,7 +144,7 @@ input,select{border:1px solid #cdcdcd;}
 .FAQcmt p {font-size:15px;}
 .selectbt2{color:white;height:37px;background-color: #005ec2;width:122px;position: absolute;
 right:3.5%;top:35%;}
-
+.faqimg_m{display:none;}
 /* p4투자정보 */
 .p4{margin-top:200px;background-color: #f2f2f2;padding-bottom: 70px;}
 .p4_lr{width:100%;max-width:1160px;margin:0 auto;display:flex;}

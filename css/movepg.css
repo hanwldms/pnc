@@ -1,24 +1,148 @@
 /* 반응형 */
-@media screen and (max-width:650px){
-	html,body{margin:0; padding:0;}
-	.wrap {min-width: 0px;}
-	.logo{width:110px;margin-left:15px}
-	.nav_ctgr,.nav_lang{display:none;}
-	.hambar img{width:50%;height:90%;}
-	.nav_rt{margin-top:5px;}
-	.navs{padding:10px 0;}
-	.bar_hover{top:50px;}
-	#move_pointer{display:none;}
-	.slide_wrap{display:none;}
-	.m_slide_wrap{display:block;}
-	.p1>.title{font-size:1.5rem;padding-top:100px;padding-bottom:20px;}
-	.p2>.title ,.p3>.title{font-size:1.5rem;padding-top:20px;padding-bottom:20px;}
-	#p1_img_m{display:block;border:1px solid blue;padding:0 10px 20px 10px;}
-	.p1>div{display:flex;flex-direction: column;}
-	#p1_img_pc{display:none;}
-	.p1_cmt h4{font-size:20px;}
-	.p1_cmt p{font-size:12px;width:250px;}
-	.p1-1 .p1_img, .p1-2 .p1_img {
+@media screen and (max-width:650px) {
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	.wrap {
+		min-width: 0px;
+	}
+
+	.logo {
+		width: 110px;
+		margin-left: 15px
+	}
+
+	.nav_ctgr,
+	.nav_lang {
+		display: none;
+	}
+
+	.hambar img {
+		width: 50%;
+		height: 90%;
+	}
+
+	.nav_rt {
+		margin-top: 5px;
+	}
+
+	.navs {
+		padding: 10px 0;
+	}
+
+	.bar_hover {
+		top: 50px;
+	}
+
+	#move_pointer {
+		display: none;
+	}
+
+	.slide_wrap {
+		display: none;
+	}
+
+	.m_slide_wrap {
+		display: block;overflow: hidden;
+	}
+
+	.p1>.title {
+		font-size: 1.5rem;
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+
+	.p2>.title
+	{
+		font-size: 1.5rem;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.p3>.title,.p4>.title
+	{
+		font-size: 1.5rem;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	#p1_img_m {
+		display: block;
+		padding: 0 10px 20px 10px;
+	}
+
+	.p1>div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#p1_img_pc {
+		display: none;
+	}
+
+	.p1_cmt h4 {
+		font-size: 20px;
+	}
+
+	.p1_cmt p {
+		font-size: 12px;
+		width: 250px;
+	}
+
+	.p1-1 .p1_img,
+	.p1-2 .p1_img {
 		margin-right: 0;
 	}
+	.p2 > div{padding:20px 20px 80px 20px;position: relative;}
+	.arrow{padding-left:1%;position: absolute;top:88%;}
+	#arrow_l,#arrow_r{width:31px;}
+	#arrow_l{margin-right:5px;}
+	.pro_menus{height:460px;display:flex;width:300%;overflow: hidden;flex-direction: row;flex-wrap: wrap;}
+.product{width:16.3%;}
+.thumbs{height:47%;}	
+.info{width:100%;background-color: white;position: absolute;top:210px;height:50%;}
+.bigspan,.smallspan{font-size:12px;}
+.qnaname{font-size:12px;}
+.qnabts{width:95%;margin-bottom:15px;}
+.qnabt1,.qnabt2{width:50%;}
+.select_qnabt1,.select_qnabt2{width:100%;padding:0 15px;}
+.qnament{padding-right: 15px;}
+.faqimg_m{display:block;}
+.faqimg_p{display:none;}
+.qnas1,.qnas2{flex-direction: column;text-align: left;margin-bottom: 5px;}
+.qnas1 input,.qnas2 input,.qnas2 select{height:80%;}
+.qnas2 select{width:120px;}
+.qna1,.qna2,.qna3,.qna4,.qna5,.qna6{width:100%;}
+.qna5,.qna6{text-align: left;margin-bottom: 5px;}
+.qna5 input{height:90%;}
+#qna4-1{width:100%;display: flex;}
+#qna4-1 input{height:45%;width:40%;margin-left:18px}
+#qna4-1 select{height:45%;width:87%;margin-left:18px;margin-top:5px;}
+#qna5-1 input,#qna6-1 input{width:90%;}
+.FAQimg{width:95%;margin:10px auto;height:23%;position: relative;overflow: hidden;padding:0}
+.FAQimg img{position: absolute;transform: translate(0,-50px)}
+.FAQcmt{top:10%;left:2%;}
+.FAQcmt h4{font-size:20px;margin-bottom: 5px;}
+.FAQcmt p {font-size:12px;}
+.selectbt2{left:2%;top:55%;height:30px;width:100px;font-size: 12px;}
+.p4_lr{width:100%;margin:0 auto;display:flex;flex-direction: column;padding:0 10px;}
+.p4_l{width:100%;}
+.p4_l h4{font-size:20px;}
+.p4_l_top{margin-bottom:5px;}
+.list_l{width:48px;}
+.list_l h2{font-size:20px;text-align: center;}
+.list_l span{font-size:12px;text-align: center;}
+.list_r h4{font-size:13px;}
+.p4_r{width:100%;padding-top:25px;}
+.p4_r1{background:#2f69d7 url(../img/bg_notice.png) no-repeat right 30px top 100%;height:145px;}
+.p4_r2{background:#424752 url(../img/bg_refer.png) no-repeat right 30px top 100%;height:145px;margin-top:25px;}
+.p4_rcmt{padding:15px;}
+.p4_rcmt h4{font-size:20px;margin:5px 0;}
+.p4_rcmt p{font-size:12px;}
+.foot2wrap{display: flex;flex-direction: column;width:100%;align-items: flex-start;margin:0 15px;}
+.address, .copy{text-align: left;font-size:10px;width:29%;margin-top:15px;}
+
 }
