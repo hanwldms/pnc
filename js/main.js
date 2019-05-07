@@ -6,8 +6,9 @@ function ani3() {
 	wid3 -= 100; // wid = wid - 100;
 	$("#slides3").stop().animate({
 		"left": wid3 + "%"
-	}, 300, function () {
+	}, 1000, function () {
 		page = Math.abs(wid3 / 100);
+		console.log(page);
 		if (wid3 == -300) {
 			wid3 = 0;
 			page = 0;

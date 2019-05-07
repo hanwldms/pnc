@@ -6,10 +6,10 @@ html,body{font-family: 'Noto Sans KR', sans-serif; }
 
 
 /* nav */
-.navss{background-color:white;position:fixed;border-bottom:1px solid #ddd;z-index: 99999;width:100%;}
-.navs{width:100%;height:100%;padding:25px 0;}
+.navss {background-color:white; position:fixed; border-bottom:1px solid #ddd; z-index: 99999; width:100%; top:0; left:0;}
+.navs {width:100%; height:100%; padding:25px 0;}
 .nav_logo{cursor: pointer; float:left;}
-.nav_ctgr{position: relative; float:left; margin-left:80px;}
+.nav_ctgr{position: relative; float:left; margin-left:80px; border: 1px solid #f00;}
 .nav_ctgr > li {width:130px;font-weight:bold;  font-size: 18px;color:#333;cursor: pointer;  position: absolute; z-index: 90;top:-26px;left:0;}
 .nav_ctgr > li:nth-child(1) {left:0;}
 .nav_ctgr > li:nth-child(2) {left:130px;}
@@ -42,18 +42,23 @@ html,body{font-family: 'Noto Sans KR', sans-serif; }
 .bar_pointer:hover{background-position: 0 -13px;}
 /* main */
 /* slide img */
-.slide_wrap{width:100%; min-width: 1980px; overflow:hidden; position: relative;}
-.pager {width: 100%; position: absolute;top:67%;left:19.5%;z-index: 9999;}
-.pager > li {font-size: 1rem; cursor: pointer; color: #bbb;float: left;margin-right: 5px;}
+.slide_wrap {width:100%; min-height: 856px; overflow:hidden; position: relative;}
+.slides3 {width: 100%; position: relative;}
+.slides3 > .slide {width: 100%; position:absolute; overflow: hidden;}
+.slides3 > .slide:nth-child(1) {top: 0; left: 0;}
+.slides3 > .slide:nth-child(2) {top: 0; left: 100%;}
+.slides3 > .slide:nth-child(3) {top: 0; left: 200%;}
+.slides3 > .slide:nth-child(4) {top: 0; left: 300%;}
+.slides3 > .slide > img {}
+.pager {width: 100%; position: absolute; top:67%; left:19.5%; z-index: 9999;}
+.pager > li {font-size: 1rem; cursor: pointer; color: #bbb;float: left; margin-right: 5px;}
 .pager > li:first-child {color: #0068d6;}
-.slides3 {width: 300%; display: flex; position: relative;}
-.slides3 > .slide {flex: 1 1 100%;}
 /* m slide img */
-.m_slide_wrap{width:100%;position: relative;top:51px;}
-.pager4 {width: 100%; position: absolute;bottom:5%;left:45.2%;z-index: 9999;}
+.m_slide_wrap{width:100%;position: relative; top:51px;}
+.pager4 {width: 100%; position: absolute;bottom:5%; left:45.2%; z-index: 9999;}
 .pager4 > li {font-size: 1rem; cursor: pointer; color: #bbb;float: left;margin-right: 5px;}
 .pager4 > li:first-child {color: #0068d6;}
-.slides4 {width: 300%; display: flex; position: relative;}
+.slides4 {width: 400%; display: flex; position: relative;}
 .slides4 > .slide2 {flex: 1 1 100%;}
 .m_slide_wrap{display:none;}
 /*  */
