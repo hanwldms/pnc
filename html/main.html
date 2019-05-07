@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../css/animate.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/movepg.css">
+	<link rel="stylesheet" href="../css/mobile.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/wow.min.js"></script>
@@ -412,39 +412,47 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			
-			<!--
-			<div class="select_qnabt1">
-				<div class="qnas1">
-					<div class="qna1">
-						<p class="qnaname">업체명<span>*</span></p>
-						<input type="text">
-					</div>
-					<div class="qna2">
-						<p class="qnaname">이름<span>*</span></p>
-						<input type="text">
-					</div>
-				</div>
-
-				<div class="qnas2">
-					<div class="qna3">
-						<p class="qnaname">휴대폰<span>*</span></p>
-						<div class="selects">
-							<select name="phonenumber" id="">
-								<option value="010">010</option>
-								<option value="011">011</option>
-								<option value="016">016</option>
-								<option value="017">017</option>
-								<option value="018">018</option>
-								<option value="019">019</option>
-							</select>-<input type="text">-<input type="text">
+				<div class="sel_flex">
+					<div class="sel_div">
+						<div class="sel_tit">
+							제목<span>*</span>
+						</div>
+						<div class="sel_cont">
+							<input type="text">
 						</div>
 					</div>
-					<div class="qna4">
-						<p class="qnaname">이메일<span>*</span></p>
-						<div class="selects">
-							<input type="text">@<input type="text"> <select name="emailadd" id="">
+				</div>
+				<div class="sel_flex">
+					<div class="sel_div">
+						<div class="sel_tit">
+							내용<span>*</span>
+						</div>
+						<div class="sel_cont biginput">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bt2 -->
+			<div class="sel_qna2">
+				<div class="sel_flex">
+					<div class="sel_div">
+						<div class="sel_tit">
+							이름<span>*</span>
+						</div>
+						<div class="sel_cont">
+							<input type="text">
+						</div>
+					</div>
+					<div class="sel_div">
+						<div class="sel_tit">
+							이메일<span>*</span>
+						</div>
+						<div class="sel_cont">
+							<input type="text">
+							<span class="dash">@</span>
+							<input type="text"> 
+							<select name="emailadd" id="" style="margin-left: 12px;">
 								<option value>직접입력</option>
 								<option value="gmail.com">gmail.com</option>
 								<option value="hanmail.com">hanmail.com</option>
@@ -454,44 +462,28 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="qna5">
-					<p class="qnaname">제목<span>*</span></p><input type="text">
-				</div>
-				<div class="qna6">
-					<p class="qnaname">내용<span>*</span></p><input type="text">
-				</div>
-			</div>
-			-->
-			<!-- bt2--------------------------------- -->
-			<div class="select_qnabt2">
-				<div class="qnas1">
-					<div class="qna1">
-						<p class="qnaname">이름<span>*</span></p>
-						<input type="text">
-					</div>
-					<div class="qna4" id="qna4-1">
-						<p class="qnaname">이메일<span>*</span></p>
-						<div class="selects">
-							<input type="text">@<input type="text"> <select name="emailadd" id="">
-								<option value>직접입력</option>
-								<option value="gmail.com">gmail.com</option>
-								<option value="hanmail.com">hanmail.com</option>
-								<option value="naver.com">naver.com</option>
-								<option value="nate.com">nate.com</option>
-							</select>
+				<div class="sel_flex">
+					<div class="sel_div">
+						<div class="sel_tit">
+							제목<span>*</span>
+						</div>
+						<div class="sel_cont">
+							<input type="text">
 						</div>
 					</div>
 				</div>
-
-				<div class="qna5" id="qna5-1">
-					<p class="qnaname">제목<span>*</span></p><input type="text">
-				</div>
-				<div class="qna6" id="qna6-1">
-					<p class="qnaname">내용<span>*</span></p><input type="text">
+				<div class="sel_flex">
+					<div class="sel_div">
+						<div class="sel_tit">
+							내용<span>*</span>
+						</div>
+						<div class="sel_cont biginput">
+							<input type="text">
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- --------------------------------- -->
+			<!--  -->
 			<div class="select_bt">
 				<button type="button" class="selectbt">
 					문의하기</button>

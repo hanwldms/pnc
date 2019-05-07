@@ -33,14 +33,14 @@ function ani4() {
 	wid4 -= 100; // wid = wid - 100;
 	$("#slides4").stop().animate({
 		"left": wid4 + "%"
-	}, 300, function () {
+	}, "slow", function () {
 		page2 = Math.abs(wid4 / 100);
 		if (wid4 == -300) {
 			wid4 = 0;
 			page2 = 0;
 			$(this).css({
 				"left": 0
-			});
+			},);
 		}
 		$(".pager4 > li").css({
 			"color": "#bbb"
@@ -112,8 +112,8 @@ $(".p1-3 #p1_img_pc").mouseleave(function () {
 });
 
 $(".qnabts > button:first-child").click(function(){
-	$(".select_qnabt1").show();
-	$(".select_qnabt2").hide();
+	$(".sel_qna1").show();
+	$(".sel_qna2").hide();
 	$(".FAQimg").children(".faqimg_p").attr('src', '../img/inquiry02_bg.png');
 	$(".FAQimg").children(".faqimg_m").attr('src', '../img/inquiry02_bg_m.png');
 	$(".FAQcmt").children("h4").html('제품/견적문의 FAQ');
@@ -124,8 +124,8 @@ $(".qnabts > button:first-child").click(function(){
 });
 
 $(".qnabts > button:last-child").click(function(){
-	$(".select_qnabt2").show();
-	$(".select_qnabt1").hide();
+	$(".sel_qna2").show();
+	$(".sel_qna1").hide();
 	$(".FAQimg").children(".faqimg_p").attr('src', '../img/inquiry01_bg.png');
 	$(".FAQimg").children(".faqimg_m").attr('src', '../img/inquiry01_bg_m.png');
 	$(".FAQcmt").children("h4").html('채용문의 FAQ');
