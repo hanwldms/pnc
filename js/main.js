@@ -34,7 +34,7 @@ function ani4() {
 	wid4 -= 100; // wid = wid - 100;
 	$("#slides4").stop().animate({
 		"left": wid4 + "%"
-	}, "slow", function () {
+	}, 1000, function () {
 		page2 = Math.abs(wid4 / 100);
 		if (wid4 == -300) {
 			wid4 = 0;
