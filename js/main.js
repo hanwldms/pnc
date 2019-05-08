@@ -136,20 +136,41 @@ $(".qnabts > button:last-child").click(function(){
 	$(".qnabt1 img").attr('src','../img/arw_down_g.png');
 });
 
-
+var clickChk = true;
+var nowNum = 0;
+var prdWid = 234;
 var interval = setInterval(prdAni, 2000);
 var k = -1;
 var pos = 0;
 var gap = 0;
-var prdWid = 234;
+$(window).resize(function(){
+	nowNum = 0;
+	$(".pro_menus").css("left", 0);
+	if($(window).width <= 650) {
+		prdWid = $(".product").eq(0).outerWidth() + 10;
+	}
+	else {
+		console.log($(".product").eq(0).outerWidth());
+		console.log($(".product").eq(0).outerWidth()/24);
+		prdWid = $(".product").eq(0).outerWidth() + ($(".product").eq(0).outerWidth()/24);
+	}
+});
+
 function prdAni() {
+	clickChk = false;
 	gap = prdWid*k;
 	pos = Number($(".pro_menus").css("left").replace("px", ""));
 	var tar = pos + gap;
 	$(".pro_menus").stop().animate({"left": tar+"px"}, 500, function(){
+		clickChk = true;
 		pos = Number($(this).css("left").replace("px", ""));
-		if(pos <= -prdWid * 3) {
-			clearInterval(interval);
+		if(k == -1) {
+			if(nowNum == 2) clearInterval(interval);
+			else nowNum++;
+		}
+		else {
+			if(nowNum == 1) clearInterval(interval);
+			else nowNum--;
 		}
 	});
 }
@@ -158,14 +179,14 @@ $("#arrow_l").click(function(){
 	clearInterval(interval);
 	if(pos < 0) {
 		k = 1;
-		prdAni();
+		if(clickChk) prdAni();
 	}
 });
 $("#arrow_r").click(function(){
 	clearInterval(interval);
 	if(pos > -prdWid * 3) {
 		k = -1;
-		prdAni();
+		if(clickChk) prdAni();
 	}
 });
 

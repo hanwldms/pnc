@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 html,body{font-family: 'Noto Sans KR', sans-serif; }
 
+#main_wrap {width: 100%; overflow-x: hidden;}
+
 .wrap{width:100%; min-width: 1100px; max-width: 1200px; margin:0px auto;}
 .title{font-weight:bold;text-align: center;padding:80px 0;font-size:3rem;color:#333333}
 
@@ -85,9 +87,9 @@ html,body{font-family: 'Noto Sans KR', sans-serif; }
 
 
 /* p2 제품소개 */
-.p2 {width:100%;}
-.p2 > div {background-image: url(../img/bg_product.png);background-size: cover;background-repeat: no-repeat; padding:80px 0;}
-.p2_wrap{width:100%; max-width:930px; margin:0 auto; overflow: hidden;}
+.p2 {width:100%; overflow: hidden;}
+.p2 > div { background-image: url(../img/bg_product.png);background-size: cover;background-repeat: no-repeat; padding:80px 0;}
+.p2_wrap{width:930px; margin:0 auto; overflow: hidden;}
 .arrow{margin-bottom:20px;cursor: pointer;}
 #arrow_l{float: right; margin-right: 10px;}
 #arrow_r{float: right; margin-right: 10px;}
@@ -136,7 +138,7 @@ input,select{border:1px solid #cdcdcd;}
 .selectbt{color:white;height:37px;background-color: #005ec2;width:122px;font-size:14px;}
 
 
-.FAQimg{position: relative;padding:30px 0 70px 0;}
+.FAQimg{position: relative;padding:30px 0 70px 0; overflow: hidden;}
 .FAQcmt{color:white;position: absolute;top:25%;left:3.5%;}
 .FAQcmt h4 {margin-bottom:10px;}
 .FAQcmt p {font-size:15px;}
@@ -148,7 +150,8 @@ right:3.5%;top:35%;}
 .p4_lr{width:100%;max-width:1160px;margin:0 auto;display:flex;}
 .p4_l{width:63.5%;}
 .p4_r{width:33.5%;padding-top:43px;}
-.p4_r1{background:#2f69d7 url(../img/bg_notice.png) no-repeat right 30px top 100%;height:228px;}
+.p4_r > div {min-width:388px;}
+.p4_r1{background:#2f69d7 url(../img/bg_notice.png) no-repeat right 30px top 100%; height:228px;}
 .p4_r2{background:#424752 url(../img/bg_refer.png) no-repeat right 30px top 100%;height:228px;}
 .p4_rcmt{padding:30px;color:white;}
 .p4_rcmt h4 {margin-bottom:15px;}
@@ -179,7 +182,7 @@ right:3.5%;top:35%;}
 .foot1 h4:hover{cursor:pointer;}
 .foot1 img{padding-right:5px;padding-bottom:6px;}
 .foot2{width:100%;background-color: #333;color:#888;}
-.foot2wrap{width:100%;max-width:1160px;display:flex;align-items: center;margin-left:20%;padding:30px 0;}
+.foot2wrap{width:100%;display:flex;align-items: center;padding-left:20%;padding:30px 0;}
 .address, .copy{font-size:13px;text-align:center;}
 .address{margin-bottom: 5px;}
 .f2r{width:810px;}
